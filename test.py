@@ -58,3 +58,4 @@ program_id = find_programs("1+2", "3")[0]
 program = sys.modules[program_id]
 print(program.solve(program.parse("2+2")))
 print(program.solve(program.parse("42+42")))
+

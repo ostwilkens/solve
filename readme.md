@@ -27,7 +27,6 @@ a program that transforms <any user input> into <any type X>
 a program that transforms <any type X> into <svg data>
 a program that transforms <svg data> into <physical print>
 
-
 _program B
 goal: recommend a movie to user based on which movies the user likes
 constraints: _
@@ -35,17 +34,35 @@ as in: transform <favorite movie name string> into <recommended movie name strin
 this means:
 program A needs 
 
-
 _program C
 goal: solve a math problem
 constraints: _
 as in: transform <math problem string> into <solution string>
 
-
 _program D
 goal: add two integers
 constraints: Z is the sum of X and Y
 as in: transform <integer X, integer Y> into <integer Z>
+
+_program E
+goal: invert a picture
+as in: 
+<program that produces picture>
+<program that inverts picture>
+<program that provides the result>
+
+
+the program is provided with a goal result. 
+an algorithm should reason about how this goal result can be achieved, 
+and return a program that reaches the goal. (within constraints?)
+
+_program F
+human goal: reverse a [user-input] string [and provide the result]
+as in: provide:<reversed string>, 'reverse':<string>, produce:<string>
+
+should produce machine requirements:
+- program 'user input' () -> (string)
+- program 'reverse' (string) -> (string)
 
 
 
